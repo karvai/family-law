@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import FirstStep from './FirstStep';
 import Grid from '@material-ui/core/Grid';
+import SecondStep from './SecondStep';
 
 
 const useStyles = makeStyles(theme => ({
@@ -24,17 +25,17 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function getSteps() {
-	return ["Personal details", "Create an ad group", "Generated document", "Generated document"];
+	return ["Personal details", "Abuse", "Relationship", "Generated document"];
 }
 
 function getStepContent(step) {
 	switch (step) {
 		case 0:
-			return <FirstStep />
+			return 
 		case 1:
-			return "What is an ad group anyways?";
+			return <FirstStep />// <SecondStep />
 		case 2:
-			return "This is the bit I really care about!";
+			return 
 		case 3:
 			return "This is the bit I really care about!";
 		default:
