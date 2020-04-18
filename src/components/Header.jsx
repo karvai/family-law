@@ -1,7 +1,6 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Container from '@material-ui/core/Container';
 import Slide from '@material-ui/core/Slide';
@@ -23,21 +22,13 @@ function HideOnScroll(props) {
 export default function Header(props) {
 	return (
 		<React.Fragment>
-			<CssBaseline />
 			<HideOnScroll {...props}>
 				<AppBar style={{ "backgroundColor": "rgba(255, 255, 255, 0.98)" }}>
 					<Toolbar style={{ "margin": 3 }}>
 						<Container>
-							<Grid
-								container
-								direction="row"
-								justify="space-between"
-								alignItems="center"
-							>
+							<Grid container direction="row" justify="space-between" alignItems="center" >
 								<div className="logoWrapper"><img src={logoImage} alt="LogoImage" /></div>
-								<div className="menu" >
-									<Menu />
-								</div>
+								<Menu />
 							</Grid>
 						</Container>
 					</Toolbar>

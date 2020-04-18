@@ -2,12 +2,11 @@ import React from 'react'
 import Container from '@material-ui/core/Container';
 import homePhoto from '../assets/img/smiling-woman-in-checkered-jacket.jpg'
 import { Typography } from '@material-ui/core';
-import Paper from '@material-ui/core/Paper';
 
 export default function Home() {
 	return (
 		<div>
-			<img className="homePhoto" src={homePhoto} alt="HomePhoto" />
+			<img className="homePhoto" src={homePhoto} alt="HomePhoto" style={{ marginTop: 15 }} />
 
 			<Container>
 				<Typography variant="h4" component="h2" style={{ marginTop: "2%" }}>

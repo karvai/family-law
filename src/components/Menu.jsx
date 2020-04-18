@@ -48,6 +48,7 @@ export default function MenuListComposition() {
 				ref={anchorRef}
 				aria-controls={open ? 'menu-list-grow' : undefined}
 				aria-haspopup="true"
+				style={{ 'textTransform': 'capitalize' }}
 				onClick={handleToggle}
 				startIcon={<Person style={{ 'color': '#BFBFBF', 'fontSize': 40 }} />}
 			>
