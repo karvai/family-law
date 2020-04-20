@@ -8,6 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import FirstStep from './FirstStep';
 import Grid from '@material-ui/core/Grid';
 import SecondStep from './SecondStep';
+import ThirdStep from './ThirdStep';
 
 
 const useStyles = makeStyles(theme => ({
@@ -25,19 +26,19 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function getSteps() {
-	return ["Personal details", "Abuse", "Relationship", "Generated document"];
+	return ["Personal details", "Abuse", "Relationship & Children", "Facts & Issues"];
 }
 
 function getStepContent(step) {
 	switch (step) {
 		case 0:
-			return 
+			return <ThirdStep />
 		case 1:
-			return <FirstStep />// <SecondStep />
+			return <SecondStep />
 		case 2:
-			return 
+			return <ThirdStep />
 		case 3:
-			return "This is the bit I really care about!";
+			return "";
 		default:
 			return "Unknown step";
 	}
